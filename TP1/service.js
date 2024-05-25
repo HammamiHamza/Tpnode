@@ -1,7 +1,9 @@
 const express= require('express');
 const app=express();
 const port = 5000;
+const auth = require('./routes/auth') 
 
+app.use('/auth',auth) 
 //auth/login return message with html
 //auth/register return page html
 // post/all return un array of object 
